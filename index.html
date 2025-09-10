@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>NODDYSHOPE - Your Fashion Destination</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <img src="/image/shoplogo.png" alt="ShopIndia" width="125px">
+                </div>
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-icons">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search for products...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="cart-icon" onclick="toggleCart()">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                    <div class="menu-icon" onclick="toggleMenu()">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Give Your Workout<br>A New Style!</h1>
+                    <p>Success isn't always about greatness. It's about consistency. Consistent hard work gains success. Greatness will come.</p>
+                    <a href="#products" class="btn-primary">Explore Now →</a>
+                </div>
+                <div class="hero-image">
+                    <img src="/image/image1-removebg-preview.png" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="/image/category-2.jpg" alt="Sports">
+                    <h3>Sports & Fitness</h3>
+                </div>
+                <div class="category-card">
+                    <img src="/image/category-3.jpg"alt="Casual">
+                    <h3>Casual Wear</h3>
+                </div>
+                <div class="category-card">
+                    <img src="/image/product-6.jpg"alt="Formal">
+                    <h3>Formal Wear</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products" id="products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Exclusive Offer -->
+    <section class="exclusive-offer">
+        <div class="container">
+            <div class="offer-content">
+                <div class="offer-text">
+                    <h2>Exclusively Available on ShopIndia</h2>
+                    <p>The HRX by Hrithik Roshan Brand</p>
+                    <a href="#products" class="btn-primary">Buy Now</a>
+                </div>
+                <div class="offer-image">
+                    <img src="/image/category-3.jpg"t="Exclusive Offer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="/image/user-1.png" alt="Customer">
+                    <p>"Amazing quality products and fast delivery. Highly recommended!"</p>
+                    <h4>Priya Sharma</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <img src="/image/user-2.png" alt="Customer">
+                    <p>"Great shopping experience. Love the variety of products available."</p>
+                    <h4>AMAN GUPTA</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <img src="/image/user-3.png" alt="Customer">
+                    <p>"Excellent customer service and authentic products. Will shop again!"</p>
+                    <h4>Anjali Patel</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShopIndia</h3>
+                    <p>Your trusted fashion destination with authentic products and great prices.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +91 9568586052 </p>
+                    <p><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="89fafcf9f9e6fbfdc9fae1e6f9e0e7ede0e8a7eae6e4">[AKASHSHISHODIAA@GMAIL.COM]</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Meerut,uttar pradesh, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Noddy Shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" onclick="toggleCart()">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be loaded dynamically -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: ₹<span id="cart-total">0</span></strong>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="./products.js"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
